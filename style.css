@@ -1,8 +1,12 @@
 *{
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    position: relative;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -19,6 +23,13 @@ body {
     filter: blur(15px);
 }
 
+.page{
+    position: relative;
+    z-index: 50;
+    width: 100vw;
+    height: 100vh;
+}
+
 .butterfly-container{
     z-index: 1000;
     height: fit-content;
@@ -28,7 +39,7 @@ body {
 }
 
 .flower{
-    z-index: 10;
+    z-index: 100;
 }
 
 .butterfly {
