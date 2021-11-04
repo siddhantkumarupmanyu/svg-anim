@@ -17,17 +17,30 @@ let pages = [{
 },
 {
     flowersLenght: 4,
-    paths: ["",
-        "",
-        "",
-        ""
+    paths: ["m -8.9381905,33.51564 c 0,0 50.1495705,54.608681 119.4229505,42.81926 69.27337,-11.789421 59.28911,-24.370403 108.97329,-36.547249 26.54684,-6.506233 65.02691,9.171878 80.41486,33.850487 5.01354,8.040519 22.85084,50.289692 22.85084,50.289692",
+        "m 323.86099,125.47776 c 0,0 69.32044,29.67406 26.30682,75.77551 -43.01362,46.10145 -78.96164,30.18337 -91.88306,24.50684 -40.83633,-17.93988 -33.72907,-27.87049 -81.96153,-46.32763 -43.45084,-16.62736 -81.864546,9.10015 -100.836269,28.25062 -30.163417,30.4476 -21.228559,60.38448 -16.053917,69.83792 18.198175,33.24584 60.039376,26.05744 60.039376,26.05744",
+        "m 119.47241,303.57846 c 0,0 59.36548,-4.7773 161.6676,-37.17156 19.08525,-6.0434 74.72954,-7.92311 99.32282,24.20182 37.57637,49.08407 1.08274,90.22241 -20.68406,100.25687 -27.0935,12.49005 -101.0996,20.7249 -138.67279,-3.36667 C 162.40694,349.86166 95.817188,355.74666 65.121842,400.12033 34.426495,444.494 19.492555,487.25831 48.456365,540.05181 c 28.963811,52.7935 78.957195,15.47732 91.261405,5.66467 12.3042,-9.81265 42.21017,-49.20947 80.60417,-64.13455 46.38108,-18.02994 89.7272,-16.90428 116.3442,-14.10964",
+        "m 336.66614,467.47229 c 0,0 61.86229,52.29125 14.94996,101.68294 -46.91233,49.39169 -69.50549,4.21946 -111.81546,24.93341 -42.30996,20.71395 -32.96767,55.58667 -83.45866,80.54969 -50.49099,24.96302 -80.821411,-10.64968 -80.821411,-10.64968"
     ],
     netsClearForPath: (currentFlower) => {
         if (currentFlower == 0) {
             return true
         }
         else if (currentFlower == 1) {
-            return netsInDocument().includes("net-0") || netsInDocument().includes("net-1")
+            return !(netsInDocument().includes("net-0") || netsInDocument().includes("net-1"))
+        }
+
+        else if (currentFlower == 2) {
+            return !(
+                netsInDocument().includes("net-2") ||
+                netsInDocument().includes("net-3") ||
+                netsInDocument().includes("net-4") ||
+                netsInDocument().includes("net-5")
+            )
+        }
+
+        else if (currentFlower == 3) {
+            return !(netsInDocument().includes("net-6") || netsInDocument().includes("net-7"))
         }
     }
 }]
@@ -39,6 +52,8 @@ let currentPage = pages[currentPageIndex]
 
 let flowerNext = document.querySelector(".flower-next")
 flowerNext.addEventListener("click", () => {
+    butterflyContainer.classList.remove("animate-path")
+
     document.querySelector("#page2").scrollIntoView()
 
     currentFlower = 0
@@ -50,7 +65,7 @@ flowerNext.addEventListener("click", () => {
     butterfly.classList.add("butterfly-animate")
     setTimeout(() => {
         butterflyContainer.classList.add("animate-path")
-    }, 50)
+    }, 500)
 })
 
 let spiderNets = document.querySelectorAll(".spider-net")
