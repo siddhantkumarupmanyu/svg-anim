@@ -114,14 +114,34 @@ body {
     }
 }
 
-.thank-you{
+.text.thank-you{
     top:318px;
     left: 125px;
     width: 205px;
     height: 110px;
-    font-size:66.8457px;
+    font-size:67px;
     line-height:0.85;
-    fill:#000000;
+    color:#fee200;
+}
+
+.text.the-end{
+    top:660px;
+    left: 38px;
+    width: 176px;
+    height: 29px;
+    font-size:40px;
+    line-height:1.25;
+    color:#fee200;
+}
+
+.text.by{
+    top:700px;
+    left: 320px;
+    width: 81px;
+    height: 21px;
+    font-size:22px;
+    line-height:1.25;
+    color:#000000;
 }
 
 .text{
@@ -136,7 +156,7 @@ body {
     font-family: 'Dancing Script', cursive;
     text-align:center;
     text-anchor:middle;
-    fill:#000000;
+    color:#000000;
     fill-opacity:1;
     stroke:none;
 }
