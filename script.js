@@ -52,6 +52,8 @@ let currentPage = pages[currentPageIndex]
 
 let flowerNext = document.querySelector(".flower-next")
 flowerNext.addEventListener("click", () => {
+    flowerNext.style.visibility = "hidden"
+
     butterflyContainer.classList.remove("animate-path")
 
     document.querySelector("#page2").scrollIntoView()
