@@ -26,8 +26,8 @@
      units="px"
      width="411px"
      inkscape:zoom="1.4142136"
-     inkscape:cx="175.00893"
-     inkscape:cy="286.7318"
+     inkscape:cx="167.93786"
+     inkscape:cy="581.59533"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -43,8 +43,8 @@
      id="layer1"
      style="display:inline">
     <path
-       style="fill:none;stroke:#ff7d00;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;font-variation-settings:normal;opacity:1;vector-effect:none;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:6, 6;stroke-dashoffset:0;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-       d="m -17.998749,20.389969 c 0,0 9.8671572,68.546341 89.209564,37.285934 29.985915,-11.814261 92.346925,-62.7912594 157.450315,-3.406234 38.78429,35.377667 46.07683,69.162541 107.5484,33.757843 67.61604,-38.943625 59.47317,115.554058 -16.06189,129.331408 -53.12863,9.69049 -81.63118,12.57911 -159.59469,-24.344 C 51.091844,141.17471 -10.582443,296.10998 63.444321,362.88333 140.08747,432.0167 182.6991,384.74609 287.37735,308.10837 c 104.67825,-76.63773 161.69089,122.71494 45.13297,169.79397 -116.55793,47.07904 -96.85798,40.11118 -96.85798,40.11118"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff7d00;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:6, 6;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+       d="m -17.998749,20.389969 c 0,0 9.8671572,68.546341 89.209564,37.285934 29.985915,-11.814261 92.346925,-62.7912594 157.450315,-3.406234 38.78429,35.377667 46.07683,69.162541 107.5484,33.757843 67.61604,-38.943625 59.47317,115.554058 -16.06189,129.331408 -53.12863,9.69049 -81.63118,12.57911 -159.59469,-24.344 C 51.091844,141.17471 -10.582443,296.10998 63.444321,362.88333 140.08747,432.0167 182.6991,384.74609 287.37735,308.10837 392.0556,231.47064 432.13518,422.7893 318.41651,476.364 248.56669,509.27139 216.01985,518.71138 216.01985,518.71138"
        id="path42730"
        sodipodi:nodetypes="cssssssssc" />
   </g>
