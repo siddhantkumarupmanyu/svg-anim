@@ -122,6 +122,12 @@ body {
     font-size:67px;
     line-height:0.85;
     color:#fee200;
+
+    animation-name: thank-you-anim;
+    animation-duration: 700ms;
+    animation-timing-function: cubic-bezier(.22,.61,.36,1);
+    animation-direction: normal;
+    animation-iteration-count: infinite;
 }
 
 .text.the-end{
@@ -159,4 +165,14 @@ body {
     color:#000000;
     fill-opacity:1;
     stroke:none;
+}
+
+@keyframes thank-you-anim {
+    0%, 100%{
+        transform: scale(1,1);
+    }
+
+    80%{
+        transform: scale(0.74, 0.74);
+    }
 }
