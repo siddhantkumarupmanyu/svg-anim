@@ -56,11 +56,11 @@ flowerNext.addEventListener("click", () => {
 
     butterflyContainer.classList.remove("animate-path")
 
-    document.querySelector("#page2").scrollIntoView()
-
     currentFlower = 0
     currentPageIndex++
     currentPage = pages[currentPageIndex]
+
+    document.querySelector(`#page${currentPageIndex + 1}`).scrollIntoView()
 
     butterflyContainer.style["offset-path"] = `path('${currentPage.paths[currentFlower]}')`
 
@@ -76,7 +76,7 @@ spiderNets.forEach((net, index) => {
     net.addEventListener("click", (event) => {
         event.target.remove()
 
-        if (currentPage.netsClearForPath(currentFlower)) {
+        if (currentPage.netsClearForPath(currentFlower) && !butterfly.classList.includes("butterfly-animate")) {
             runNextButterflyPathAnimation()
         }
     })
