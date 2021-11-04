@@ -70,10 +70,9 @@ flowerNext.addEventListener("click", () => {
 
     butterflyContainer.style["offset-path"] = `path('${currentPage.paths[currentFlower]}')`
 
-    butterfly.classList.add("butterfly-animate")
-    setTimeout(() => {
-        butterflyContainer.classList.add("animate-path")
-    }, 500)
+    if (currentPage.netsClearForPath(currentFlower)) {
+        runNextButterflyPathAnimation()
+    }
 })
 
 let spiderNets = document.querySelectorAll(".spider-net")
