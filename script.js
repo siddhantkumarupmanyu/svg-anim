@@ -94,6 +94,10 @@ butterflyContainer.addEventListener("animationend", () => {
     currentFlower++
 
     if (currentFlower == currentPage.flowersLenght) {
+        if (currentPageIndex == 2) {
+            setTimeout(thankYou(), 1000)
+            return
+        }
         flowerNext.style.visibility = "visible"
         return
     }
@@ -124,4 +128,9 @@ function runNextButterflyPathAnimation() {
 
 function netsInDocument() {
     return Array.from(document.querySelectorAll(".spider-net")).map((elem, index) => (elem.id))
+}
+
+function thankYou() {
+    document.querySelector("#last-svg-path").remove()
+    
 }
