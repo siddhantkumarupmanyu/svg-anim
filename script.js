@@ -76,7 +76,7 @@ spiderNets.forEach((net, index) => {
     net.addEventListener("click", (event) => {
         event.target.remove()
 
-        if (currentPage.netsClearForPath(currentFlower) && !butterfly.classList.includes("butterfly-animate")) {
+        if (currentPage.netsClearForPath(currentFlower) && !Array.from(butterfly.classList).includes("butterfly-animate")) {
             runNextButterflyPathAnimation()
         }
     })
