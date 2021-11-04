@@ -132,5 +132,6 @@ function netsInDocument() {
 
 function thankYou() {
     document.querySelector("#last-svg-path").remove()
+
     
 }
