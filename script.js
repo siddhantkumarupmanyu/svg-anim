@@ -1,5 +1,6 @@
 // you know what I hate this code...
 // worst code i have ever written
+// worst git message I have ever written
 
 let butterflyContainer = document.querySelector(".butterfly-container")
 let butterfly = document.querySelector(".butterfly")
