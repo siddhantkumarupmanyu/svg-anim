@@ -33,6 +33,10 @@ body {
     z-index: 100;
 }
 
+.spider-net{
+    z-index: 100;
+}
+
 .flower-next{
     animation-name: next-page;
     animation-duration: 600ms;

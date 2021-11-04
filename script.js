@@ -8,6 +8,14 @@ flowerNext.addEventListener("click", () => {
     // todo: reset the butterfly
 })
 
+let spiderNets = document.querySelectorAll(".spider-net")
+spiderNets.forEach((net, index) => {
+    net.addEventListener("click", (event) => {
+        event.target.remove()
+    })
+})
+
+
 butterflyContainer.addEventListener("animationend", () => {
     butterfly.classList.remove("butterfly-animate")
 
@@ -39,4 +47,5 @@ butterflyContainer.addEventListener("animationend", () => {
 
 window.addEventListener('load', function () {
     butterflyContainer.classList.add("animate-path")
+    document.querySelector("#page1").scrollIntoView()
 })
