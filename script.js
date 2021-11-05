@@ -138,9 +138,16 @@ function thankYou() {
 
     butterflyHeartPath()
 
-    // document.querySelector(".text.thank-you").style.visibility = "visible"
-    // document.querySelector(".text.the-end").style.visibility = "visible"
-    // document.querySelector(".text.by").style.visibility = "visible"
+    setTimeout(() => {
+        document.querySelector(".text.thank-you").style.visibility = "visible"
+    }, 5500)
+    setTimeout(() => {
+        document.querySelector(".text.the-end").style.visibility = "visible"
+        document.querySelector(".text.by").style.visibility = "visible"
+    }, 12000)
+
+    // should I stop butterfly animation after two rounds??
+    // thank you is already beating thought that's why. IDK
 
 }
 
@@ -157,9 +164,6 @@ function butterflyHeartPath() {
         butterflyContainer.classList.add("animate-path")
     }, 50)
 }
-
-// todo: fix path duration in last page
-// add the heart path
 
 // todo tell shris if she's having any problem or the page gets cuts. Like in case of my mobile or moto g4 in chrome responsive.
 // Goto to desktop chrome and open dev tools and change device to pixel 2 and reload the page.
