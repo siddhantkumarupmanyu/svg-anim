@@ -153,7 +153,6 @@ function thankYou() {
 
 function butterflyHeartPath() {
     butterflyContainer.classList.remove("animate-path")
-    // butterflyContainer.style["animation-direction"] = reverse;
 
     const heartPath = "m 225.84582,518.01352 c 0,0 163.446,-60.49448 178.68435,-201.67801 C 419.76853,175.15198 220.65881,205.7152 230.74908,313.33978 240.83935,205.7152 41.72963,175.15198 56.967987,316.33551 72.206345,457.51904 225.84582,518.01352 225.84582,518.01352"
 
