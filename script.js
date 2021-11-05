@@ -139,3 +139,7 @@ function thankYou() {
 
 // todo: fix path duration in last page
 // add the heart path
+
+// todo tell shris if she's having any problem or the page gets cuts. Like in case of my mobile or moto g4 in chrome responsive.
+// Goto to desktop chrome and open dev tools and change device to pixel 2 and reload the page.
+// if she uses firfox do it with firefox instead.
