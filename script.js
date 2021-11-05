@@ -142,4 +142,4 @@ function thankYou() {
 
 // todo tell shris if she's having any problem or the page gets cuts. Like in case of my mobile or moto g4 in chrome responsive.
 // Goto to desktop chrome and open dev tools and change device to pixel 2 and reload the page.
-// if she uses firfox do it with firefox instead.
+// if she uses firfox do it with firefox instead. (TBH chrome would be better for her)
