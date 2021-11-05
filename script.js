@@ -103,7 +103,7 @@ butterflyContainer.addEventListener("animationend", () => {
     }
 
     setTimeout(() => {
-        if (currentPage.netsClearForPath(currentFlower)) {
+        if (currentPage.netsClearForPath(currentFlower) && !Array.from(butterfly.classList).includes("butterfly-animate")) {
             runNextButterflyPathAnimation()
         }
     }, 1000)
