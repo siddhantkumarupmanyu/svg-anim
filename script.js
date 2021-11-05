@@ -112,6 +112,7 @@ butterflyContainer.addEventListener("animationend", () => {
 window.addEventListener('load', function () {
     butterflyContainer.style["offset-path"] = `path('${currentPage.paths[currentFlower]}')`
     document.querySelector("#page1").scrollIntoView()
+
     butterflyContainer.classList.add("animate-path")
 })
 
@@ -133,5 +134,8 @@ function netsInDocument() {
 function thankYou() {
     document.querySelector("#last-svg-path").remove()
 
-    
+
 }
+
+// todo: fix path duration in last page
+// add the heart path
