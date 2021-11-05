@@ -13,8 +13,8 @@ body {
 }
 
 .background-img {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     position: fixed;
     top: 0;
     left: 0;
@@ -25,8 +25,8 @@ body {
 
 .page{
     position: relative;
-    width: 100%;
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 
 .flower{
