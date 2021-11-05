@@ -134,17 +134,21 @@ function netsInDocument() {
 function thankYou() {
     document.querySelector("#last-svg-path").remove()
 
-    document.querySelector("#heart-svg-path").style.visibility = "visible"
+    setTimeout(() => {
+        butterflyHeartPath()
+    }, 500)
 
-    butterflyHeartPath()
+    setTimeout(() => {
+        document.querySelector("#heart-svg-path").style.visibility = "visible"
+    }, 7000)
 
     setTimeout(() => {
         document.querySelector(".text.thank-you").style.visibility = "visible"
-    }, 5500)
+    }, 14000)
     setTimeout(() => {
         document.querySelector(".text.the-end").style.visibility = "visible"
         document.querySelector(".text.by").style.visibility = "visible"
-    }, 12000)
+    }, 20000)
 
     // should I stop butterfly animation after two rounds??
     // thank you is already beating thought that's why. IDK
