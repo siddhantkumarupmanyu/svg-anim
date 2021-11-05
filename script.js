@@ -95,7 +95,7 @@ butterflyContainer.addEventListener("animationend", () => {
 
     if (currentFlower == currentPage.flowersLenght) {
         if (currentPageIndex == 2) {
-            setTimeout(thankYou(), 1000)
+            setTimeout(thankYou, 1000)
             return
         }
         flowerNext.style.visibility = "visible"
